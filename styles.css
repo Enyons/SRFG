@@ -1,65 +1,120 @@
-body {
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  header {
+    background-image: linear-gradient(to right, #1a1818, #3b3b3b);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-radius: initial;
+  }
+
+.cord {
+  width: 100px;
+  height: 40px; 
+  color: #fff;
+  background-color: #3957c5;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px 10px;
+  text-align: center;
+}
+
+.cord:hover {
+  background-color: #001d87;
+}
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 31px;
+  }
+  
+  nav li:first-child {
+    margin-left: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  nav a:hover {
+    border-radius: 10px 10px;
+    background-color: #bebebe;
+    color: #111;
+  }
+  
+  main {
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+
+.overOns {
+  text-align: center;
+  width: 250px;
+  border-radius: 10px 10px;
+  background-color: #bebebb;
+}
+
+.dienst {
+  text-align: center;
+  width: 250px;
+  border-radius: 10px 10px;
+  background-color: #bebebb;
+}
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    background-image: url('images/backgound.png');
-    background-size: cover;
-}
-
-h1 {
-    padding: 50px;
-    font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-h2 {
-    padding: 50px;
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.p-btn {
-    margin: 10px;
-    font-size: 25px;
-    background: red;
     padding: 10px;
-    border: 2;
-    border-radius: 1rem;
-    width: 200px
-    
-}
-
-.s-btn {
-    margin: 10px;
-    font-size: 25px;
-    background: green;
-    padding: 10px;
-    border: 2;
-    border-radius: 1rem;
-    width: 200px
-    
-}
-
-.p-btn:hover {
-    margin: 10px;
-    font-size: large;
-    background: lightcoral;
-    padding: 10px;
-    border: 2;
-    border-radius: 1rem;
-    width: 180px
-}
-
-.s-btn:hover {
-    margin: 10px;
-    font-size: large;
-    background: lightgreen;
-    padding: 10px;
-    border: 2;
-    border-radius: 1rem;
-    width: 180px
-    
-}
-
-
-
-
-
+  }
+  
+  /* Animation styles */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  
+  

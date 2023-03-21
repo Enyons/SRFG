@@ -1,23 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<!doctype html>
 
-    <h1>Passage counter</h1>
-    <h2 id="count-el">0</h2>
-    <button id="passager-btn" class="p-btn" onclick="increment()">increment</button>
-    
-    <button id="save-btn" class="s-btn" onclick="save()">save</button>
-    
-    <h3 id="save">Latest saves: </h3>
-   
+<html>
+    <head>
+        <meta charset="utf-8">
 
-    <script src="index.js"></script>
-</body>
+        <title>SRFG</title>
+        <link rel="icon" href="Images/favicon-32x32.png">
+
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <header id="home">
+      <h1>Welkom bij SRFG</h1>
+      <p><a href="https://discord.gg/mnk6KTggR6" class="cord">Discord</a></p>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#overOns">Over ons</a></li>
+          <li><a href="#diensten">Diensten</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="overOns" class="overOns">
+        <h2>Over ons</h2>
+        <p>SRFG is een team dat werkt aan een story-game, en zijn eigen warzone e-sports team heeft.</p>
+      </section>
+      <section id="diensten" class="dienst">
+        <h2>Diensten</h2>
+          <p>
+            Wij verwelkomen warzone spelers tot ons e-sports team, als ze door de try-outs komen. Wij zoeken ook nog UnReal Engine develepors voor de SRFG game.
+          </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; SRFG 2023</p>
+    </footer>
+    
+        <script src="scripts.js"></script>
+        
+    </body>
+
 </html>
